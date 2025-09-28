@@ -1,5 +1,5 @@
-#authenticate() - функция, которая проверяет логин и пароль, возвращает User или None.
-#работает в связке с функцией login()
+#login() - функция, которая создаёт сессию и впускает пользователя в систему.
+#работает в связке с функцией authenticate()
 
 
 from django.contrib.auth import authenticate, login
@@ -13,10 +13,10 @@ def user_login(request):
         form = LoginForm(request.POST)
         if form.is_valid():
             cd = form.cleaned_data
-            user = authenticate(request, username=cd['username'], password=cd['password'])  # использование функции
+            user = authenticate(request, username=cd['username'], password=cd['password'])
             if user is not None:
                 if user.is_active:
-                    login(request, user)
+                    login(request, user)  # использование функции
                     return HttpResponse('Authenticated successfully')
                 else:
                     return HttpResponse('Disabled account')
