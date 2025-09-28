@@ -1,0 +1,7 @@
+__pycache__/
+venv/
+.vscode
+mysite/
+my_app/
+db.sqlite3
+manage.py
