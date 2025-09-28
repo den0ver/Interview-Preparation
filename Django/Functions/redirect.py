@@ -1,5 +1,6 @@
 #redirect() - функция, которая перенаправляет пользователя на другую страницу
 
+
 from django.shortcuts import redirect
 
 
