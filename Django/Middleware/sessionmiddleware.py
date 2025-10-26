@@ -17,11 +17,11 @@ def get_session(request):  #получение
     return HttpResponse(f'Name: {username},\nLogged In: {is_logged}.')
 
 
-def clear_session(request):
+def clear_session(request):  #удаление всех данных
     request.session.flush()
 
 
-def visit_counter(request):
+def visit_counter(request):  #количество посещений
     visits = request.session.get('visits', 0)
     visits += 1
     request.session['visits'] = visits
