@@ -15,4 +15,5 @@ def binary_search(arr, item):
             low = mid + 1
     return None
 
-print(binary_search([1, 2, 3, 4, 5], 5))
+nums = [i for i in range(1, 101)]
+print(binary_search(nums, 100))
