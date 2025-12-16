@@ -1,0 +1,14 @@
+{
+    "users": [
+        {
+            "name": "den0ver",
+            "email": "some_email@gmail.com",
+            "age": "17"
+        },
+        {
+            "name": "qwairity",
+            "email": "some_email2@gmail.com",
+            "age": "19"
+        }
+    ]
+}
