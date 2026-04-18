@@ -1,10 +1,10 @@
 #isdigit() - метод, который проверяет, состоил ли строка из цифр.
 
-item = '12345' #True
-print(item.isdigit())
+item = '12345' 
+print(item.isdigit()) #True
 
-item = 'abc123' #False
-print(item.isdigit())
+item = 'abc123' 
+print(item.isdigit()) #False
 
 
 #Сохраняем в списке только цифры
